@@ -1,41 +1,53 @@
-package com.btssio.ozenne.vanille.model;
+package com.btssio.ozenne.model;
 
-/**
- * Classe représentant une promotion sur un produit.
- */
+import java.time.LocalDate;
+
 public class Promotion {
-    private String code;
-    private String description;
-    private float tauxReduction; // Par exemple, 0.1 pour 10%
+	 private String id;
+	    private String libelle;
+	    private LocalDate debutPromo;
+	    private LocalDate finPromo;
+	    private float remise;
+		public Promotion(String id, String libelle, LocalDate debutPromo, LocalDate finPromo, float remise) {
+			super();
+			this.id = id;
+			this.libelle = libelle;
+			this.debutPromo = debutPromo;
+			this.finPromo = finPromo;
+			this.remise = remise;
+		}
+		public String getId() {
+			return id;
+		}
+		public void setId(String id) {
+			this.id = id;
+		}
+		public String getLibelle() {
+			return libelle;
+		}
+		public void setLibelle(String libelle) {
+			this.libelle = libelle;
+		}
+		public LocalDate getDebutPromo() {
+			return debutPromo;
+		}
+		public void setDebutPromo(LocalDate debutPromo) {
+			this.debutPromo = debutPromo;
+		}
+		public LocalDate getFinPromo() {
+			return finPromo;
+		}
+		public void setFinPromo(LocalDate finPromo) {
+			this.finPromo = finPromo;
+		}
+		public float getRemise() {
+			return remise;
+		}
+		public void setRemise(float remise) {
+			this.remise = remise;
+		}
+	    
+	    
+	        
 
-    public Promotion(String code, String description, float tauxReduction) {
-        this.code = code;
-        this.description = description;
-        this.tauxReduction = tauxReduction;
-    }
-
-    // Getters et setters
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public float getTauxReduction() {
-        return tauxReduction;
-    }
-
-    public void setTauxReduction(float tauxReduction) {
-        this.tauxReduction = tauxReduction;
-    }
 }
