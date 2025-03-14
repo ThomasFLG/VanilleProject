@@ -1,0 +1,5 @@
+<resources>
+    <!-- Nom de l'application modifié -->
+    <string name="app_name">Vanille for ever</string>
+    <string name="welcome_message">Bienvenue dans Vanille</string>
+</resources>
